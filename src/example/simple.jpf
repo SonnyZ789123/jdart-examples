@@ -1,0 +1,10 @@
+@include=jdart.jpf
+
+# Point to your compiled classes
+classpath=/workspace/out/production/jdart-examples
+
+# Class under analysis
+target=example.SimpleExample
+
+# Symbolic method to explore
+concolic.method.foo=example.SimpleExample.foo(x:int)
