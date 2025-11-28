@@ -4,14 +4,12 @@ public class SimpleExample {
 
     // The function JDart will explore symbolically
     public static int foo(int x) {
-        int y = x + 3;
-
-        if (y > 10) {
+        if (x == 0) {
+            return 0;
+        } else if (x > 10) {
             return 1;
-        } else if (y == 10) {
-            return 2;
         } else {
-            return 3;
+            return -1;
         }
     }
 
