@@ -1,6 +1,7 @@
 @include=./base.jpf
 
 concolic.method=zoo
+concolic.method=zoo_sub
 
 jdart.tests.gen=true
 jdart.tests.pkg=features/simple
