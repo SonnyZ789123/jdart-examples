@@ -1,6 +1,7 @@
 @include = ./jdart.jpf
 
 # Point to your compiled classes
+# Hard-coded knowledge of that it's run in a docker container where the code is at /workspace
 classpath=/workspace/out/production/jdart-examples
 
 # Class under analysis
@@ -11,3 +12,24 @@ concolic.method.foo=example.SimpleExample.foo(x:int)
 concolic.method=foo
 
 listeners=gov.nasa.jpf.jdart.ConcolicListener
+
+log.fine=jdart
+log.finest=constraints
+log.level=warning
+
+report.class=gov.nasa.jpf.report.Reporter
+report.publisher=console
+report.console.class=gov.nasa.jpf.report.ConsolePublisher
+report.console.start=jpf,sut
+report.console.transition=
+report.console.constraint=constraint,snapshot
+report.console.property_violation=error,snapshot
+report.console.show_steps=true
+report.console.show_method=true
+report.console.show_code=false
+report.console.finished=result,statistics
+
+jdart.tests.gen=true
+jdart.tests.pkg=example
+jdart.tests.suitename=suite
+jdart.tests.dir=/workspace/generated-test-cases
