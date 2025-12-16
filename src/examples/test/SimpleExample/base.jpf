@@ -3,5 +3,5 @@
 # Class under analysis
 target=test.SimpleExample.SimpleExample
 
-concolic.method.foo=test.SimpleExample.foo(x:int)
+concolic.method.foo=test.SimpleExample.SimpleExample.foo(x:int)
 

@@ -1,0 +1,7 @@
+@include = ../../config/jdart.jpf
+
+# Class under analysis
+target=test.ControlFlowGraph.Test
+
+concolic.method.foo=test.ControlFlowGraph.Test.foo(x:int)
+

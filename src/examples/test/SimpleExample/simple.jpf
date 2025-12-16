@@ -3,6 +3,8 @@
 concolic.method=foo
 
 jdart.tests.gen=true
-jdart.tests.pkg=test
 jdart.tests.suitename=suite
+
 jdart.tests.dir=/workspace/generated-test-cases
+
+jdart.tests.pkg=test.SimpleExample
