@@ -1,7 +1,7 @@
-@include = ../config/jdart.jpf
+@include = ../../config/jdart.jpf
 
 # Class under analysis
-target=test.SimpleExample
+target=test.SimpleExample.SimpleExample
 
 concolic.method.foo=test.SimpleExample.foo(x:int)
 
