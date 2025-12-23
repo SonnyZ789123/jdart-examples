@@ -49,14 +49,13 @@ public class Test {
             } else {
                 System.out.println("L2: 0 <= x <= 10");
 
-                float y = 3.14f;
-                if (x + y < 256) {
-                    System.out.println("L3: x + 3.14f < 256");
-                    return 10;
+                double s = java.lang.Math.toRadians(2.2);
+                if (Math.sqrt(x) * s >= 0) {
+                    System.out.println("L3: sqrt(x)*s >= 0");
+                    return 9;
                 } else {
-                    // JDart's constraint solver cannot invert this path
                     System.out.println("DON'T KNOW path");
-                    return -1;
+                    return -999;
                 }
             }
         }
