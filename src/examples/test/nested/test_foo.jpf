@@ -2,3 +2,4 @@
 
 concolic.method=foo
 
+log.finest=jdart,jdart.debug
