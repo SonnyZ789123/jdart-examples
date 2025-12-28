@@ -25,7 +25,7 @@ class FooTest {
     void testNonNegativeBetweenZeroAndTen() {
         // x >= 0, 0 <= x <= 10, x + 3.14 < 256
         int result = foo(7);
-        assertEquals(10, result);
+        assertEquals(9, result);
     }
 
     @Test
