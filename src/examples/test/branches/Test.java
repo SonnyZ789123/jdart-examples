@@ -13,6 +13,15 @@ public class Test {
                 "\n-------- In foo! Parameters = x:" + x + ", y:" + y + ", mode:" + mode
         );
 
+        // LOOP L0
+        for (int i = 0; i < 3; i++) {
+            System.out.println("L0: Loop iteration " + i);
+            if (i == x) {
+                System.out.println("L0: i == x, breaking loop");
+                break;
+            }
+        }
+
         // L1
         if (x == y) { // IF_ICMPEQ
             System.out.println("L1: x == y");
