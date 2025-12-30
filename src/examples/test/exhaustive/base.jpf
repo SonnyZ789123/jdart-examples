@@ -1,0 +1,7 @@
+@include = ../../config/jdart.jpf
+
+# Class under analysis
+target=test.exhaustive.Test
+
+concolic.method.foo=test.exhaustive.Test.foo(x:int,y:double,mode:test.exhaustive.Test$Mode)
+
