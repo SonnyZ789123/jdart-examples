@@ -3,5 +3,7 @@
 # Class under analysis
 target=test.loops.Test
 
+concolic.method.simple_loop=test.loops.Test.simple_loop(x:int)
+
 concolic.method.foo=test.loops.Test.foo(x:int)
 

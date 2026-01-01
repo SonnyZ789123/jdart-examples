@@ -1,0 +1,5 @@
+@include = ./base.jpf
+
+concolic.method=simple_loop
+
+log.finest=jdart,jdart.debug
