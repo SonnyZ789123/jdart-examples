@@ -1,0 +1,7 @@
+@include = ../../config/jdart.jpf
+
+# Class under analysis
+target=test.switchcase.Test
+
+concolic.method.foo=test.switchcase.Test.foo(x:int)
+
