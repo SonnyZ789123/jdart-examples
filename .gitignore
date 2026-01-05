@@ -30,4 +30,5 @@ bin/
 .DS_Store
 
 ### Custom ###
-/generated-test-cases
+generated-test-cases/
+data/
