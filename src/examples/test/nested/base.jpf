@@ -4,6 +4,8 @@
 target=test.nested.Test
 
 concolic.method.foo=test.nested.Test.foo(x:int)
+concolic.method.foo.config=foo
+jdart.configs.foo.constraints=(x >= 0 && x < 10)
 
 concolic.method.sub_foo=test.nested.Test.sub_foo(y:int)
 

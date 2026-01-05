@@ -2,45 +2,39 @@ package test.nested;
 
 public class Test {
     public static int foo(int x) {
-        System.out.println("\n-------- In foo! Parameter = " + x);
-
-        if (x < 0) {
-            System.out.println("L1 B2: x < 0");
-
-            if (x < -10) {
-                System.out.println("L2 B4: x < -10");
-                return -14;
-
-            } else {
-                System.out.println("L2 B3: -10 <= x < 0");
-                return -4;
-            }
+        if (x < 5) {
+            return sub_foo(x);
         } else {
-            System.out.println("L1 B1: x >= 0");
-
-            if (x > 10) {
-                System.out.println("L2 B2: x > 10");
-                return sub_foo(x);
-            } else {
-                System.out.println("L2 B1: 0 <= x <= 10");
-
-                return sub_foo(x);
+            switch (x) {
+                case 5: return 5;
+                case 6: return 6;
+                case 7: return 7;
+                case 8: return 8;
+                case 9: return 9;
+                default: return -1;
             }
         }
     }
 
     public static int sub_foo(int y) {
-        System.out.println("\n-------- In sub_foo! Parameter = " + y);
-
-        if (y % 2 == 0) {
-            System.out.println("y is even");
-            return y / 2;
+        if (y == 0) {
+            return 0;
+        } else if (y == 1) {
+            return 1;
+        } else if (y == 2) {
+            return 2;
         } else {
-            System.out.println("y is odd");
-            return 3 * y + 1;
+            return sub_sub_foo(y);
         }
     }
 
+    public static int sub_sub_foo(int z) {
+        switch (z) {
+            case 3: return 3;
+            case 4: return 4;
+            default: return -1;
+        }
+    }
 
     public static void main(String[] args) {
         // Concrete execution entry point (JDart ignores this)

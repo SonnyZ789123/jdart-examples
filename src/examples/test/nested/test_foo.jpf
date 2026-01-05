@@ -3,3 +3,5 @@
 concolic.method=foo
 
 log.finest=jdart,jdart.debug
+
+jdart.exploration.strategy.class=gov.nasa.jpf.jdart.exploration.CoverageHeuristicStrategy
