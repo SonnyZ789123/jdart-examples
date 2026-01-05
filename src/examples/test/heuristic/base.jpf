@@ -1,0 +1,9 @@
+@include = ../../config/jdart.jpf
+
+# Class under analysis
+target=test.heuristic.Test
+
+concolic.method.foo=test.heuristic.Test.foo(x:int)
+
+concolic.method.foo.config=foo
+jdart.configs.foo.constraints=(x >= 0 && x < 15)

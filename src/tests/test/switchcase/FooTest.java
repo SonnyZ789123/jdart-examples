@@ -9,7 +9,7 @@ class FooTest {
 
     @Test
     void testSwitchCaseOne() {
-        int result = foo(3);
-        assertEquals(3, result);
+        int result = foo(1);
+        assertEquals(1, result);
     }
 }

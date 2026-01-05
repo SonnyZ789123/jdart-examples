@@ -6,13 +6,13 @@
 shell=gov.nasa.jpf.jdart.JDart
 symbolic.dp=z3
 symbolic.dp.z3.bitvectors=true
-jdart.exploration.strategy.class=gov.nasa.jpf.jdart.constraints.DFSExplorationStrategy
+jdart.exploration.strategy.class=gov.nasa.jpf.jdart.exploration.DFSStrategy
 
 ###############################################################################
 #
 # logging and jpf output
 #
-log.finest=jdart
+log.finest=jdart,jdart.debug
 log.info=constraints
 
 # suppress jpf output
