@@ -1,7 +1,7 @@
 @include = ./base.jpf
 
-concolic.method=foo
+concolic.method=bar
 
-log.finest=jdart,jdart.debug,jdart.instructions
+log.finest=jdart,jdart.debug
 
 jdart.exploration.strategy.class=gov.nasa.jpf.jdart.exploration.CoverageHeuristicStrategy

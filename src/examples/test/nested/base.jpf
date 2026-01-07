@@ -8,4 +8,14 @@ concolic.method.foo.config=foo
 jdart.configs.foo.constraints=(x >= 0 && x < 10)
 
 concolic.method.sub_foo=test.nested.Test.sub_foo(y:int)
+concolic.method.sub_sub_foo=test.nested.Test.sub_sub_foo(:int)
+
+concolic.method.bar=test.nested.Test.bar(a:int)
+concolic.method.bar.config=bar
+jdart.configs.bar.constraints=(a >= 0 && a < 20)
+
+concolic.method.sub_bar=test.nested.Test.sub_bar(b:int)
+concolic.method.sub_sub_bar=test.nested.Test.sub_sub_bar(c:int)
+concolic.method.sub_sub_sub_bar=test.nested.Test.sub_sub_sub_bar(d:int)
+concolic.method.baz=test.nested.Test.baz(z:int)
 

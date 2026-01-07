@@ -1,6 +1,56 @@
 package test.nested;
 
 public class Test {
+    public static int bar(int a) {
+        if (a < 10) {
+            return foo(a);
+        } else {
+            if (a < 18) {
+                return sub_bar(a);
+            } else {
+                return baz(a);
+            }
+        }
+    }
+
+    public static int sub_bar(int b) {
+        switch (b) {
+            case 10: return 10;
+            case 11: return 11;
+            case 12: return 12;
+            default: return sub_sub_bar(b);
+        }
+    }
+
+    public static int sub_sub_bar(int c) {
+        if (c == 13) {
+            return 13;
+        } else if (c == 14) {
+            return 14;
+        } else {
+            return sub_sub_sub_bar(c);
+        }
+    }
+
+    public static int sub_sub_sub_bar(int d) {
+        switch (d) {
+            case 15: return 15;
+            case 16: return 16;
+            case 17: return 17;
+            default: return -1;
+        }
+    }
+
+    public static int baz(int e) {
+        if (e == 18) {
+            return 18;
+        } else if (e == 19) {
+            return 19;
+        } else {
+            return -1;
+        }
+    }
+
     public static int foo(int x) {
         if (x < 5) {
             return sub_foo(x);
@@ -39,5 +89,6 @@ public class Test {
     public static void main(String[] args) {
         // Concrete execution entry point (JDart ignores this)
         System.out.println(foo(5));
+        System.out.println(bar(15));
     }
 }
