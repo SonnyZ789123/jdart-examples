@@ -4,4 +4,4 @@ concolic.method=bar
 
 log.finest=jdart,jdart.debug
 
-jdart.exploration.strategy.class=gov.nasa.jpf.jdart.exploration.CoverageHeuristicStrategy
+jdart.exploration=gov.nasa.jpf.jdart.exploration.CoverageHeuristicStrategy

@@ -3,3 +3,6 @@
 concolic.method=foo
 
 log.finest=jdart,jdart.debug
+
+z3.timeout=1000
+jdart.termination=gov.nasa.jpf.jdart.termination.TimedTermination,0,0,5

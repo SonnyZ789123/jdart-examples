@@ -2,4 +2,4 @@
 
 concolic.method=foo
 
-jdart.exploration.strategy.class=gov.nasa.jpf.jdart.exploration.CoverageHeuristicStrategy
+jdart.exploration=gov.nasa.jpf.jdart.exploration.CoverageHeuristicStrategy
