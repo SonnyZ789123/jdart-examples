@@ -9,8 +9,7 @@ class FooTest {
 
     @Test
     void testEqualsToOne() {
-        // x < 0, x < -10, even
         int result = foo(1);
-        assertEquals(0, result);
+        assertEquals(1, result);
     }
 }

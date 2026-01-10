@@ -5,3 +5,7 @@ concolic.method=foo
 log.finest=jdart,jdart.debug
 
 jdart.exploration=gov.nasa.jpf.jdart.exploration.BFSStrategy
+
+jdart.tests.gen=true
+jdart.tests.pkg=test.nested
+jdart.tests.dir=/workspace/data/generated-tests

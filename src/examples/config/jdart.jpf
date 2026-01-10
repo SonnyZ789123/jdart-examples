@@ -12,7 +12,7 @@ jdart.exploration=gov.nasa.jpf.jdart.exploration.DFSStrategy
 #
 # logging and jpf output
 #
-log.finest=jdart,jdart.debug,jdart.instructions
+log.finest=jdart,jdart.debug
 log.info=constraints
 
 # suppress jpf output
