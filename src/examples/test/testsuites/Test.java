@@ -10,7 +10,7 @@ public class Test {
             return 5;
         }
         if (a== 6) {
-            return 6;
+            throw new RuntimeException();
         }
         return a + 100;
     }
@@ -20,7 +20,9 @@ public class Test {
             return 1;
         }
         if (x == 2) {
-            return 2;
+            Nested nested = new Nested(x);
+
+            return nested.nestedFoo(y);
         }
         if (x== 3) {
             return 3;

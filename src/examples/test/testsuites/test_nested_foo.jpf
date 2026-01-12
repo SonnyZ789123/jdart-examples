@@ -1,8 +1,9 @@
 @include = ./base.jpf
 
-concolic.method=foo
+concolic.method=nestedFoo
 
 log.finest=jdart,jdart.testsuites
 
 jdart.tests.gen=true
+jdart.tests.pkg=test.testsuites
 jdart.tests.dir=/workspace/data/generated-tests

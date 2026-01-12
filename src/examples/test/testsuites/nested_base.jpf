@@ -1,0 +1,6 @@
+@include = ../../config/jdart.jpf
+
+# Class under analysis
+target=test.testsuites.Nested
+
+concolic.method.nestedFoo=test.testsuites.Nested.nestedFoo(y:int)
