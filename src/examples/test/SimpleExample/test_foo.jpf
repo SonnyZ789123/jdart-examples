@@ -4,4 +4,4 @@ concolic.method=foo
 
 jdart.tests.gen=true
 jdart.tests.pkg=test.SimpleExample
-jdart.tests.dir=/workspace/data/generated-tests
+jdart.tests.dir=/jdart-project/workspace/data/generated-tests

@@ -29,4 +29,4 @@ jdart.configs.all_fields_symbolic.symbolic.include=this.*
 
 # Point to your compiled classes
 # Hard-coded knowledge of that it's run in a docker container where the code is at /workspace
-classpath=/workspace/out/production/jdart-examples
+classpath=/jdart-project/workspace/out/production/jdart-examples

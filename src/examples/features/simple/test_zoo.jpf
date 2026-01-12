@@ -6,6 +6,6 @@ concolic.method=zoo_sub
 jdart.tests.gen=true
 jdart.tests.pkg=features/simple
 jdart.tests.suitename=suite
-jdart.tests.dir=/workspace/generated-test-cases
+jdart.tests.dir=/jdart-project/workspace/data/generated-tests
 
 

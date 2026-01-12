@@ -4,5 +4,7 @@ concolic.method=foo
 
 log.finest=jdart,jdart.testsuites
 
+jdart.exploration=gov.nasa.jpf.jdart.exploration.CoverageHeuristicStrategy
+
 jdart.tests.gen=true
-jdart.tests.dir=/workspace/data/generated-tests
+jdart.tests.dir=/jdart-project/workspace/data/generated-tests

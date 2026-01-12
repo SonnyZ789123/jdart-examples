@@ -5,6 +5,6 @@ concolic.method=foo
 jdart.tests.gen=true
 jdart.tests.suitename=suite
 
-jdart.tests.dir=/workspace/generated-test-cases
+jdart.tests.dir=/jdart-project/workspace/data/generated-tests
 
 jdart.tests.pkg=test.ControlFlowGraph
