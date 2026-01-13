@@ -1,9 +1,8 @@
 @include = ./base.jpf
 
-concolic.method=nestedFoo
+concolic.method=foo
 
-log.finest=jdart,jdart.testsuites
+jdart.exploration=gov.nasa.jpf.jdart.exploration.CoverageHeuristicStrategy
 
 jdart.tests.gen=true
-jdart.tests.pkg=test.testsuites
 jdart.tests.dir=/jdart-project/workspace/data/generated-tests

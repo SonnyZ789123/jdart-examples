@@ -5,3 +5,6 @@ concolic.method=bar
 log.finest=jdart,jdart.debug
 
 jdart.exploration=gov.nasa.jpf.jdart.exploration.CoverageHeuristicStrategy
+
+jdart.tests.gen=true
+jdart.tests.dir=/jdart-project/workspace/data/generated-tests

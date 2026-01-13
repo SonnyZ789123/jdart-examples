@@ -20,9 +20,7 @@ public class Test {
             return 1;
         }
         if (x == 2) {
-            Nested nested = new Nested(x);
-
-            return nested.nestedFoo(y);
+            return 2;
         }
         if (x== 3) {
             return 3;

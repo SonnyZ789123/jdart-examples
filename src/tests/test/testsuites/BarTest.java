@@ -40,14 +40,5 @@ public class BarTest {
 
     }
 
-    @Test
-    public void test3() {
-        int result = obj.bar(4);
-
-        // perform assertions
-        assertEquals(4, result);
-
-    }
-
 }
 

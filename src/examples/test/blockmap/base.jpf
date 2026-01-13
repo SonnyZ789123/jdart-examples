@@ -1,0 +1,7 @@
+@include = ../../config/jdart.jpf
+
+# Class under analysis
+target=test.blockmap.Test
+
+concolic.method.foo=test.blockmap.Test.foo(x:int)
+
