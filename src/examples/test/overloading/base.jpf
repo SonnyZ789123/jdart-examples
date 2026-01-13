@@ -1,0 +1,9 @@
+@include = ../../config/jdart.jpf
+
+# Class under analysis
+target=test.overloading.Test
+
+concolic.method.foo=test.overloading.Test.foo(x:int)
+concolic.method.double_foo=test.overloading.Test.foo(y:double)
+concolic.method.two_ints_foo=test.overloading.Test.foo(x:int, y:int)
+

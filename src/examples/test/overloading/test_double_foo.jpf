@@ -1,0 +1,6 @@
+@include = ./base.jpf
+
+concolic.method=double_foo
+
+jdart.tests.gen=true
+jdart.tests.dir=/jdart-project/workspace/data/generated-tests
