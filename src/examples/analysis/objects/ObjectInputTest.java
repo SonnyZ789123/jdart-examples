@@ -3,7 +3,7 @@ package analysis.objects;
 public final class ObjectInputTest {
 
     // Entry method
-    public static int foo(Object o) {
+    public static int foo(Obj o) {
         if (o == null) {
             return -1;
         }
@@ -21,7 +21,7 @@ public final class ObjectInputTest {
         }
 
         // Static field access
-        if (Object.STATIC_FIELD == 42) {
+        if (Obj.STATIC_FIELD == 42) {
             result += 4;
         }
 
@@ -33,7 +33,7 @@ public final class ObjectInputTest {
         int pub  = args.length > 0 ? Integer.parseInt(args[0]) : 1;
         int priv = args.length > 1 ? Integer.parseInt(args[1]) : -1;
 
-        Object o = new Object(pub, priv);
+        Obj o = new Obj(pub, priv);
         int result = foo(o);
 
         System.out.println("Result = " + result);

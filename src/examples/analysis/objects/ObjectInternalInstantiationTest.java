@@ -5,7 +5,7 @@ public final class ObjectInternalInstantiationTest {
     // Entry method
     public static int foo(int publicField, int privateField) {
         // Instantiate Object inside foo
-        Object o = new Object(publicField, privateField);
+        Obj o = new Obj(publicField, privateField);
 
         int result = 0;
 
@@ -20,7 +20,7 @@ public final class ObjectInternalInstantiationTest {
         }
 
         // Static field access (constant)
-        if (Object.STATIC_FIELD == 42) {
+        if (Obj.STATIC_FIELD == 42) {
             result += 4;
         }
 
