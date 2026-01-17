@@ -22,10 +22,14 @@ public final class OverallJDartExample {
     // Entry method (symbolic)
     // -------------------------
     public static int foo(int n, int m, long limit, double scale, boolean flag) {
-
         // Primitive branching (int)
         if (n < 0) {
             throw new IllegalArgumentException("n must be non-negative");
+        }
+
+        // Potential division by zero
+        if (n == 0) {
+            int divByZero = 1 / n;
         }
 
         // Branch on long
@@ -80,7 +84,6 @@ public final class OverallJDartExample {
     // Helper method 2 (object + branching)
     // -------------------------
     private static int helperAdjust(int x, Box box, boolean flag) {
-
         // Branch on object field
         if (box.value == 0) {
             return x;
